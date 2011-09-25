@@ -1,5 +1,7 @@
 CaneyWebsite::Application.routes.draw do
-  resources :recipes
+  resources :recipes do
+    resources :comments
+  end
 
 
   root :to => 'recipes#index'
