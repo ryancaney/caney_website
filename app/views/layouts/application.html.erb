@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CaneyWebsite</title>
-  <%= stylesheet_link_tag :all %>
+  <title>Recipe Website</title>
+  <%= render 'layouts/stylesheets' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+        <%= yield %>
+      </section>
+    </div>
 </body>
 </html>
