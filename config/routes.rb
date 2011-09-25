@@ -4,7 +4,7 @@ CaneyWebsite::Application.routes.draw do
   end
 
 
-  root :to => 'recipes#index'
+ # root :to => 'recipes#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
