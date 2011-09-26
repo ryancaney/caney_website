@@ -2,10 +2,16 @@ require 'spec_helper'
 
 describe "Recipes" do
   describe "GET /recipes" do
-    it "works! (now write some real specs)" do
-      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get recipes_path
-      response.status.should be(200)
+    it "should make a new recipe" do
+      lambda do
+      visit recipes_path
+      fill_in "Name", :with => "Example Recipe"
+      fill_in "Author", :with => "Example Author"
+      fill_in "Ingredients", :with => "stuff"
+      fill_in "directions", :with => "actions"
+      click_button
+      response.should render_template('recipes/show')
+      end
     end
   end
 end

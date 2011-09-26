@@ -1,3 +1,5 @@
+<!-- displays the recipe and any comments by the user -->
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -20,11 +22,13 @@
   <%= @recipe.directions %>
 </p>
 
+<!-- add a comment, connects to comments/form partial -->
 <h3>Add a comment:</h3>
 <%= render "comments/form" %>
 
 <br />
 
+<!-- displays comments -->
 <h3>Comments</h3>
 <%= render @recipe.comments %>
 

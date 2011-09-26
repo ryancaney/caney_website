@@ -1,5 +1,16 @@
 require 'spec_helper'
 
 describe Recipe do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:each) do
+    @attr = {
+        :name => "recipe 1",
+        :author => "cook",
+        :ingredients => "items",
+        :directions => "steps"
+    }
+  end
+
+  it "should create a new recipe given the attributes" do
+    Recipe.create!(@attr)
+  end
 end
