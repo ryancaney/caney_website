@@ -30,7 +30,10 @@
 
 <!-- displays comments -->
 <h3>Comments</h3>
-<%= render @recipe.comments %>
+<div id="comments">
+ <%= render @recipe.comments %>
+</div>
+
 
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |

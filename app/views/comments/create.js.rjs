@@ -1,0 +1,2 @@
+page.insert_html :top, :comments, @comment
+page[@comment].visual_effect :highlight

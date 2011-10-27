@@ -1,6 +1,8 @@
 class RecipesController < ApplicationController
   # GET /recipes
   # GET /recipes.xml
+
+
   def index
     @recipes = Recipe.all
 

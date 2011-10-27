@@ -1,8 +1,10 @@
 <!-- Partial for displaying a comment -->
-
+<% div_for comment do %>
 <p>
   <b>Comment:</b>
+  <p> Posted <%= time_ago_in_words(comment.created_at) %> ago </p>
   <%= comment.content %>
+  <% end %>
 </p>
 
 <p>

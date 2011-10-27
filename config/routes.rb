@@ -1,8 +1,9 @@
 CaneyWebsite::Application.routes.draw do
-  resources :recipes do
-  resources :comments
-  end
 
+
+  resources :recipes do
+    resources :comments
+  end
 
   root :to => 'recipes#index'
   # The priority is based upon order of creation:
