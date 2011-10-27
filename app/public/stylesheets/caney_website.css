@@ -1,0 +1,153 @@
+.container {
+    width: 710px;
+    padding-bottom: 30px;
+}
+
+body {
+    background-color: #00cccc;
+}
+
+header {
+    padding-top: 20px;
+}
+
+header img {
+    padding: 1em;
+    background: #fff;
+}
+
+section {
+    margin-top: 1em;
+    font-size: 120%;
+    padding: 20px;
+    background: #fff;
+}
+
+section h1 {
+    font-size: 200%;
+}
+
+/* Links*/
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Navigation */
+
+nav {
+    float: right;
+}
+
+nav {
+    background-color: white;
+    padding: 0 0.7em;
+    white-space: nowrap;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.2em 0;
+}
+
+nav ul li a {
+    padding:  0 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Add Recipe button */
+
+a.addrecipe_button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: 80px;
+    color: #000;
+    background:  #00cccc;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Rounded corners */
+
+.round{
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div.field, div.actions{
+    margin-bottom: 10px;
+}
+
+h1.comment {
+  margin-bottom: 0.3em;
+}
+
+table.comments {
+  margin-top: 1em;
+}
+
+table.comments tr {
+  height: 70px;
+}
+
+table.comments tr {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.comments tr td.comment {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.comments tr td.comment span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.recipe_info img {
+  padding-right: 0.1em;
+}
+
+div.recipe_info a {
+  text-decoration: none;
+}
+
+div.recipe_info span.recipe_name {
+  position: absolute;
+}
+
+div.recipe_info span.comments {
+  font-size: 80%;
+}
+
+form.new_comment {
+  margin-bottom: 2em;
+}
+
+form.new_comment textarea {
+  height: 6em;
+  margin-bottom: 0;
+}

@@ -1,0 +1,10 @@
+<!-- form used to add a comment -->
+
+<%= form_for([@recipe, @recipe.comments.build]) do |f| %>
+<div class="field">
+  <%= f.text_area :content %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>

@@ -1,0 +1,11 @@
+<!-- defines the header, which is present on every page -->
+
+<header>
+  <% cookbook_logo = image_tag("cookbook_logo.png", :alt => "Sample App", :class => "round") %>
+  <%= link_to cookbook_logo, root_path %>
+  <nav class="round">
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+    </ul>
+  </nav>
+</header>

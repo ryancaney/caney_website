@@ -1,0 +1,37 @@
+<!-- displays the recipe and any comments by the user -->
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @recipe.name %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @recipe.author %>
+</p>
+
+<p>
+  <b>Ingredients:</b>
+  <%= @recipe.ingredients %>
+</p>
+
+<p>
+  <b>Directions:</b>
+  <%= @recipe.directions %>
+</p>
+
+<!-- add a comment, connects to comments/form partial -->
+<h3>Add a comment:</h3>
+<%= render "comments/form" %>
+
+<br />
+
+<!-- displays comments -->
+<h3>Comments</h3>
+<%= render @recipe.comments %>
+
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>
